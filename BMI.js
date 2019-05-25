@@ -38,7 +38,7 @@ function getBMI(h, w) {
   for (var i = 0; i < len; i ++) {
     var upper = table[i].upper;
     var lower = table[i].lower;
-    if ((bmi > lower) && (bmi < = upper)) {
+    if ((bmi > lower) && (bmi <= upper)) {
       return {"BMI": bmi, "class":table[i].value};
    }
   }    
